@@ -1,6 +1,6 @@
 # 🎟️ TicketTest2
 
-A **full-stack project** with a **FastAPI + SQLAlchemy backend** and a **modern JavaScript frontend** (npm-based).
+Hi team, here is my proof of concept for the ticketing system, a **FastAPI + SQLAlchemy backend** and a **modern JavaScript frontend**.Nothing much while we wait on getting together to design the real thing, but just an idea of how we could go about implementing using this tech stack. Below is a setup guide for this kind of project with these tools.
 
 ---
 
@@ -8,9 +8,7 @@ A **full-stack project** with a **FastAPI + SQLAlchemy backend** and a **modern 
 ```
 fullstack2/
 │── backend/         # FastAPI + SQLAlchemy app
-│── frontend/        # React/Vue/Next/etc. app (npm-based)
-│── requirements.txt # Python backend dependencies
-│── package.json     # Frontend dependencies
+│── frontend/        # React app
 ```
 
 ---
@@ -20,14 +18,8 @@ fullstack2/
 ### 1️⃣ Create and activate a virtual environment
 **Windows (CMD/PowerShell):**
 ```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-**Mac/Linux (bash/zsh):**
-```bash
-python3 -m venv venv
-source venv/bin/activate
+python -m venv .venv
+.venv\Scripts\activate
 ```
 
 ---
@@ -49,7 +41,7 @@ This will install:
 uvicorn main:app --reload
 ```
 
-- `main` = your `main.py` file (adjust if needed)  
+- `main` = the `main.py` file, fastAPI entrypoint
 - `app` = the FastAPI instance inside `main.py`  
 
 Backend runs at 👉 [http://localhost:8000](http://localhost:8000)  
@@ -73,7 +65,7 @@ npm install
 npm run dev
 ```
 
-Frontend runs at 👉 [http://localhost:3000](http://localhost:3000)  
+Frontend runs at 👉 [http://localhost:5173](http://localhost:5173)  
 
 ---
 
@@ -107,6 +99,3 @@ git push
 5. Open a Pull Request  
 
 ---
-
-## 📜 License
-MIT License © 2025 OliverProqual
